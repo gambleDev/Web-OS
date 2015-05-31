@@ -1,0 +1,94 @@
+<html>
+<head>
+
+	<meta charset="utf-8"/>
+
+	<title>Desktop</title>
+	
+	<link rel="stylesheet" type="text/css" href="desktop.css">
+</head>
+<body onload="lockScreen()">
+
+	<nav class="main-menu">
+
+		<div class="scrollbar" id="style-1">
+			<ul>
+				<li>
+					<a>
+						<i class="fa fa-lg"></i>
+						<span class="nav-text">Programs:</span>
+					</a>
+				</li>   
+
+				<!--Second division-->
+				<li class="darkerlishadow">
+					<a onclick="launch(
+						'Calculator', 'test.html', '225', '400'
+					)">
+						<i class="fa fa-lg"></i>
+						<span class="nav-text">Calculator</span>
+					</a>
+				</li>
+
+				<li class="darkerli">
+					<a onclick="launch(
+						'Spotify', 'http://www.militaryrpg.com'
+					)">
+						<i class="fa fa-lg"></i>
+						<span class="nav-text">Spotify</span>
+					</a>
+				</li>
+
+				<li class="darkerli">
+					<a onclick="notification('Notifications are working!', 300000)">
+						<i class="fa fa-lg"></i>
+						<span class="nav-text">Google Chrome</span>
+					</a>
+				</li>
+
+				<li class="darkerli">
+					<a href="">
+						<i class="fa"></i>
+						<span class="nav-text">Notepad ++</span>
+					</a>
+				</li>
+
+				<li class="darkerli">
+					<a href="">
+						<i class="fa fa-lg"></i>
+						<span class="nav-text">File Explorer</span>
+					</a>
+				</li>
+
+				<li class="darkerlishadowdown">
+					<a href="">
+						<i class="fa fa-lg"></i>
+						<span class="nav-text">Dropbox</span>
+					</a>
+				</li>
+
+			</ul>
+			<li>
+				<a onclick="lockScreen()">
+					<i class="fa fa-lg"></i>
+					<span class="nav-text">Lock</span>
+				</a>
+			</li>   
+
+			<li>
+				<a>
+					<i class="fa fa-lg"></i>
+					<span class="nav-text">
+						<div class="menu-time"></div>
+					</span>
+				</a>
+			</li>
+		</div>
+	</nav>
+	
+	<div class="desktop">
+		
+	</div>
+</body>
+<script src="desktop.js"></script>
+</html>
